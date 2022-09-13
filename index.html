@@ -7,81 +7,121 @@
     <meta name="keywords" content="Anton, cv, Resume">
     <meta name='description' content="Это сайт резюме Антона Ульянова">
     <title>Anton Resume</title>
+    <link rel="stylesheet" href="01_styles.css">
+    
 </head>
 <body>
-    <p>
-        <img src="foto.jpg" alt="Фото Антона Ульянова" width="200">
-    </p>
-    <h1> Ульянов Антон</h1>
-    <p>
-       Сейчас я работаю не в <strong>IT специальности,</strong> но хочу изменить это в ближайшее время!
-    </p>
-    <p>        
-        Помимо работы занимаюсь <em> изучением новых языков программирования, воспитанием детей, плаванием</em>
-    </p>
-    <p>
-        <h3>Список социальных сетей:</h3>
-    </p>
-    <a href="https://vk.com/mctoks" target="_blank">Вконтакте</a> | <a href=""></a><a href="https://t.me/AntonSergei4" target="_blank">
-        Telegram</a> | <a href="https://soundcloud.com/zlypies" target="_blank">Soundcloud</a>
-    <hr width="770" align="left">
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Изучение JS</li>
-        <li>Плавание</li>
-        <li>Кино</li>
-    </ol>
+    <div class="container">
+        <div class="header">
+            <div class="">
+                <img src="foto.jpg" alt="Фото Антона Ульянова" class="avatar">
+            </div>
 
-<h2>Опыт работы</h2>
+            <div class="info-text">   
 
-<table>
-    <thead>
-        <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Санги Стиль</td>
-            <td>Менчендайзер</td>
-            <td>2012-2013</td>
-        </tr>
-        <tr>
-            <td>Sapore Italiano</td>
-            <td>Администратор</td>
-            <td>2013-2022</td>
-        </tr>
-        <tr>
-            <td>Название конторы</td>
-            <td>Юниор разработчик</td>
-            <td>2022-сейчас</td>
-        </tr>
-    </tbody>
-</table>
+                <div>
+                    <h1> Ульянов Антон</h1>
+                    <p class="about_me">
+                        &nbsp&nbspСейчас я работаю не в IT специальности, но хочу изменить это в ближайшее время.
+                    </p>
+                    <p class="about_me">
+                        &nbsp&nbspПомимо работы занимаюсь изучением новых языков программирования, воспитанием детей, плаванием.
+                    </p>
+                </div>
 
-<h2>Связаться со мной</h2>
+                <div class="social_net">
+                    <h3>Список социальных сетей:</h3>                    
+                    <a href="https://vk.com/mctoks" target="_blank" class="links"><img src="vk_logo.png" class="icon"> Вконтакте</a>
+                    <a href="https://t.me/AntonSergei4" target="_blank" class="links"><img src="telegram_logo.png" class="icon"> Telegram</a>
+                    <a href="https://soundcloud.com/zlypies" target="_blank" class="links"><img src="logo_sc.png" class="icon">Soundcloud</a>
+                </div>
 
-<div>
-    <label for="name">Ваше имя:</label>
-    <input type="name" id="name" placeholder="Введите имя">
-</div>
+            </div>
+        
+        </div>
 
-<div>
-    <label for="email">Ваш email:</label>
-    <input type="email" id="email" placeholder="Введите email">
-</div>
 
-<div>
-    <label for="message">Ваше сообщение:</label>
-    <br>
-    <textarea id="message" rows="5" cols="25" placeholder="Введите текст сообщения"></textarea>
-</div>
+        <div class="card bg-olive">
 
-<div>
-    <button type="submit">Отправить!</button>
-</div>
+            <h2 style="margin-left: 7px;">Мои хобби</h2>
+            
+            <ol class="list">
+                <li>Изучение JS</li>
+                <li>Изучение HTML/CSS   </li>
+                <li>Плавание</li>
+                <li>Кино</li>
+            </ol>
 
+        </div>
+
+        <!-- <hr width=auto align="left"> -->
+
+        <div class="card bg-yellow" >
+    
+            <h2 style="margin-left: 20px;">Опыт работы</h2>
+    
+            <table class="table">
+                <thead class="head">
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>  
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    <tr>
+                        <td>Санги Стиль</td>
+                        <td>Мерчендайзер</td>
+                        <td>2012-2013</td>
+                    </tr>
+                    <tr>
+                        <td>Sapore Italiano</td>
+                        <td>Администратор</td>
+                        <td>2013-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Название конторы</td>
+                        <td>Джуниор разработчик</td>
+                        <td>2022-сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="card bg-gray">
+
+            <h3 style="text-align: center;">Связаться со мной</h3>
+
+            <div class="upperform">           
+               
+                <div class="form">
+                    <label for="name" class="label">Ваше имя:</label><br>
+                    <input type="name" id="name" placeholder="Введите имя" class="input">
+                </div>
+
+                <div class="form">
+                    <label for="email" class="label">Ваш email:</label><br>
+                    <input type="email" id="email" placeholder="Введите email" class="input">
+                </div>                 
+
+            </div>
+
+            <div class="form">
+                <label for="message" class="label">Ваше сообщение:</label>
+                <br>
+                <textarea id="message" class="textarea input" placeholder="Введите текст сообщения"></textarea>
+            </div>
+            
+            <div class="form">
+            <button type="submit" class="btn">Отправить!</button>
+            </div>
+        </div>
+            
+        
+            
+        
+
+    </div>
 </body>
-</html>     
+</html>
