@@ -1,6 +1,3 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
@@ -198,6 +195,7 @@ a:hover {
     cursor: pointer;
     opacity: 0.5;
     color: rgba(43, 43, 43, 0.788);
+    
 }
 
 .input {
@@ -226,6 +224,7 @@ a:hover {
     background: #bdbdbd56;
     color: #4c4c4c;
     border: 0;
+    
 }
 
 
@@ -254,3 +253,8 @@ a:hover {
         font-size: 14px;
     }
   }
+
+
+  .spoiler:hover {
+    cursor: help;
+    }
