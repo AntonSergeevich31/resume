@@ -80,8 +80,8 @@
                         <td>2013-2022</td>
                     </tr>
                     <tr>
-                        <td>Новое рабочее место</td>
-                        <td>Новая должность</td>
+                        <td>Название конторы</td>
+                        <td>Джуниор разработчик</td>
                         <td>2022-сейчас</td>
                     </tr>
                 </tbody>
@@ -90,36 +90,44 @@
 
 
         <div class="card bg-gray">
+            <h3 class='spoiler' style="text-align: center;" data-toggle-id="subscribe-mail" title="Нажмите, что увидеть больше">Связаться со мной</h3>
+            <form id="subscribe-mail" hidden>
+                <div class="upperform">                   
+                    <div class="form">
+                        <label for="name" class="label">Ваше имя:</label><br>
+                        <input type="name" id="name" placeholder="Введите имя" class="input">
+                    </div>
 
-            <h3 style="text-align: center;">Связаться со мной</h3>
-
-            <div class="upperform">           
-               
-                <div class="form">
-                    <label for="name" class="label">Ваше имя:</label><br>
-                    <input type="name" id="name" placeholder="Введите имя" class="input">
+                    <div class="form">
+                        <label for="email" class="label">Ваш email:</label><br>
+                        <input type="email" id="email" placeholder="Введите email" class="input">
+                    </div>         
                 </div>
-
                 <div class="form">
-                    <label for="email" class="label">Ваш email:</label><br>
-                    <input type="email" id="email" placeholder="Введите email" class="input">
-                </div>                 
-
-            </div>
-
-            <div class="form">
-                <label for="message" class="label">Ваше сообщение:</label>
-                <br>
-                <textarea id="message" class="textarea input" placeholder="Введите текст сообщения"></textarea>
-            </div>
-            
-            <div class="form">
-            <button type="submit" class="btn">Отправить!</button>
-            </div>
+                    <label for="message" class="label">Ваше сообщение:</label>
+                    <br>
+                    <textarea id="message" class="textarea input" placeholder="Введите текст сообщения" title="Тут можно начать печатать сообщение:"></textarea>
+                </div>            
+                <div class="form">
+                    <button type="submit" class="btn">Отправить!</button>
+                </div>
+            </form>
         </div>
-            
+
         
-            
+
+          
+        <script>
+            document.addEventListener('click', function(event) {
+            let id = event.target.dataset.toggleId;
+             if (!id) return;
+          
+            let elem = document.getElementById(id);
+                
+             elem.hidden = !elem.hidden;
+           });
+        </script>
+
         
 
     </div>
