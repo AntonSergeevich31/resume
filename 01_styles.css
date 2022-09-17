@@ -223,8 +223,7 @@ a:hover {
 .input:hover {
     background: #bdbdbd56;
     color: #4c4c4c;
-    border: 0;
-    
+    border: 0;    
 }
 
 
@@ -253,8 +252,3 @@ a:hover {
         font-size: 14px;
     }
   }
-
-
-  .spoiler:hover {
-    cursor: help;
-    }
